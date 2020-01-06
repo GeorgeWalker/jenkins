@@ -11,7 +11,7 @@ LABEL com.redhat.component="jenkins-agent-nodejs-8-rhel7-container" \
       io.k8s.description="The jenkins agent nodejs image has the nodejs tools on top of the jenkins slave base image." \
       io.openshift.tags="openshift,jenkins,agent,nodejs"
 
-ENV NODEJS_VERSION=8 \
+ENV NODEJS_VERSION=10 \
     NPM_CONFIG_PREFIX=$HOME/.npm-global \
     PATH=$HOME/node_modules/.bin/:$HOME/.npm-global/bin/:$PATH \
     BASH_ENV=/usr/local/bin/scl_enable \
